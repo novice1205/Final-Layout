@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans:wght@300&family=Roboto+Slab:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #222;
+    background-color: wheat;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    min-width: 360px;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    color: antiquewhite;
+    background-color: wheat;
+    /*background-color: rgba(177, 73, 73, 0.918);*/
+    padding: 0px 0;
+    justify-content: space-between;
+    margin: -15px 0;
+}
+
+.navbar-nav {
+    font-size: 1.15rem;
+    margin-left: 25px;
+    font-family: Roboto Slab;
+    font-weight: 100;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+}
+
+#logo2 {
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+#g20logo{
+    height: 150px;
+    margin: 0 -60px;
+}
+
+#lib-logo {
+    color: black;
+    font-size: 1.5rem;
+    font-family: Roboto Slab;
+    font-weight: 540;
+}
+
+.logo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+.college-logo{
+    width: 100px;
+}
+.logo-text {
+    display: flex;
+    justify-content: center;
+    margin: 15px 10px;
+}
+
+.logo-right{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;    
+    margin: 0 55px;
+}
+
+.left-img{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:990px) {
+   #g20logo{
+    width: 410px ;
+   }
+}
+
+@media screen and (max-width:1182px) {
+    .top-bar{
+        height: 320px;
+    }
+    .logo-right{
+        display: block;
+        margin: auto;
+    }
+    #logo2{
+        margin: auto;
+    }
+}
+.footer-logo{
+    width: 25rem;
+}
+
+@media screen and (max-width:655px) {
+    .top-bar {
+        display: block;
+        height: 540px;
+        margin: -15px 0;
+    }
+    .logo-content{
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    .college-logo{
+        margin: auto;
+    }
+    #lib-logo{
+        font-size: 27px;
+    }
+    #logo,#logo2{
+        justify-content: center;
+        margin: auto;
+    }
+    .logo-right{
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .college-logo{
+        width:160px;
+    }
+    .logo-right{
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width:464px) {
+    .top-bar{
+        height:600px;
+    }
+    .logo-right{
+        margin: 0 30px;
+    }
+}
+
+.dropdown-item{
+    font-size: 1.25rem;
+}
+.carousel-inner img {
+    width: 100%;
+    max-height: 42vw;
+    opacity: 0.95;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.carousel-control-prev,.carousel-control-next{
+    height: auto;
+    width: 3.6vw;
+}
+.carousel-control-prev-icon {
+    background-color: rgb(102, 30, 30);
+    padding: 30px 15px;
+    border-radius: 30px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    transition: 200ms;
+    transform: scale(1.125);
+}
+
+.carousel-control-next-icon {
+    background-color: rgb(102, 30, 30);
+    padding: 30px 15px;
+    border-radius: 30px;
+}
+
+.carousel-item {
+    transition: transform 500ms;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 500ms;
+}
+
+.content {
+    display: flex;
+    margin: 55px 25px;
+    justify-content: center;
+}
+
+.containerone,
+.containertwo {
+    background-color: rgb(102, 30, 30);
+    height: fit-content;
+    width: 90%;
+    z-index: 2;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-family: Roboto Slab;
+    color: antiquewhite;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: justify;
+    padding: 50px 50px;
+    word-wrap: break-word;
+}
+
+.containerone>h1,.containertwo>h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.lib-icons{
+    background-color: rgb(66, 21, 21);
+    border-radius: 5px;
+    display: inline-block;
+    justify-content: center;
+    margin: 10px 15px;
+}
+.icon-text{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+@media screen and (max-width:1220px) {
+    .icons{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+.text-content{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Roboto Slab;
+    color: antiquewhite;
+    font-size: 1.25rem;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.news{
+    width: 30%;
+    padding: 10px 21px;
+    border: solid white;
+    height: 400px;
+    margin: auto;
+    word-wrap: break-word;
+}
+.updates{
+    width: 30%;
+    padding: 10px 21px;
+    border: solid white;
+    height: 400px;
+    margin: auto;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width:1220px) {
+    .text-content{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+    .news,.updates{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:644px) {
+    .news,.updates{
+        width: 80%;
+    }
+    
+}
+footer{
+    color: antiquewhite;
+    position: relative;
+    background-color: rgb(102, 30, 30);
+    margin-top: 75px;
+    font-family: Roboto Slab;
+}
+
+#foot-logo{
+    max-width: 40%;
+}
+
+.bg-gray-100{
+    background-color: rgb(66, 21, 21);
+}
+
+#find-us{
+    background-color: rgb(66, 21, 21);
+    border-radius: 3px;
+}
+@media screen and (max-width:991px) {
+    .footer-logo{
+        width: 16rem;
+    }
+    .footer-text{
+        margin: 25px 0
+    }
+}
